@@ -30,15 +30,52 @@
                 <a href="#" target="_blank" id="cv"><button>DOWNLOAD CV</button></a>
                 </p>
                 <div class="skills">
-                    <span>Microsoft Office</span><span id="persen">90%</span>
+                    <span>Microsoft Office</span><span id="persen">85%</span>
                     <div class="bar-skill"><div id="colored-of"></div></div>
-                    <span>Data Warehousing</span><span id="persen">90%</span>
+                    <span>Data Warehousing</span><span id="persen">80%</span>
                     <div class="bar-skill"><div id="colored-ware"></div></div>
-                    <span>Data Mining</span><span id="persen">90%</span>
+                    <span>Data Mining</span><span id="persen">80%</span>
                     <div class="bar-skill"><div id="colored-min"></div></div>
                     <span>Akhlak</span><span id="persen">0%</span>
                     <div class="bar-skill"><div id="colored-akhlak"></div></div>
                 </div>
+        </div>
+    </div>
+    <div class="services">
+            <h1>Services</h1>
+            <div class="serv serv1"><img src="./office.png" id="imgserv1"><div class="sub-of sub-of1"><ul class="ul ul1"><li>Microsoft Excel</li><li>Microsoft Word</li><li>Microsoft Power Point</li></ul></div></div>
+            <div class="serv serv2"><img src="./stat.png" id="imgserv2"><div class="sub-of sub-of2"><ul class="ul ul2"><li>Perfect Statistic</li></ul></div></div>
+            <div class="serv serv3"><img src="./plan.png" id="imgserv3"><div class="sub-of sub-of3"><ul class="ul ul3"><li>Perfect Planning</li></ul></div></div>
+    </div>
+    <div class="info">
+        <h1>Experience</h1>
+        <div class="school">
+            <div class="track"></div>
+            <ul>
+                <li><b>SMK Negeri 1 Majalengka</b></li>
+                <li class="sub-info">Teknik Komputer dan Jaringan | 2018</li>
+                <li class="sub-info">Rata Rata Nilai UN | 80,25</li>
+            </ul>
+            <ul id="school-2">
+                <li><b>Universitas Terbuka</b></li>
+                <li class="sub-info">English Literature | 2023</li>
+                <li class="sub-info">Bachelor of English LIterature</li>
+            </ul>
+        </div>
+        <div class="exp">
+            <div class="track-exp"></div>
+            <ul>
+                <li><b>PT. Artaboga Cemerlang | 2018</b></li>
+                <li class="sub-info">Business and Survey Development | Staff</li>
+            </ul>
+            <ul id="exp-2">
+                <li><b>PT. Artaboga Cemerlang | 2019</b></li>
+                <li class="sub-info">Sales Data Analyst | Staff</li>
+            </ul>
+            <ul id="exp-3">
+                <li><b>PT. Artaboga Cemerlang | 2021</b></li>
+                <li class="sub-info">Sales Data Analyst | Junior Supervisor</li>
+            </ul>
         </div>
     </div>
     <script>
@@ -73,6 +110,61 @@
                     $("#wa,#mail").css("display","none")
                     counter = true
                 }
+            })
+
+            $(".serv1").mouseenter(function(){
+                $("#imgserv1").css("filter","grayscale(0)")
+                $(".ul1").css("display","block")
+                $(".sub-of1").animate({
+                    height : "65px"
+                },"fast")
+                $(".ul1").animate({
+                    opacity : "1"
+                },"fast")
+            })
+            $(".serv2").mouseenter(function(){
+                $("#imgserv2").css("filter","grayscale(0)")
+                $(".ul2").css("display","block")
+                $(".sub-of2").animate({
+                    height : "65px"
+                },"fast")
+                $(".ul2").animate({
+                    opacity : "1"
+                },"fast")
+            })
+            $(".serv3").mouseenter(function(){
+                $("#imgserv3").css("filter","grayscale(0)")
+                $(".ul3").css("display","block")
+                $(".sub-of3").animate({
+                    height : "65px"
+                },"fast")
+                $(".ul3").animate({
+                    opacity : "1"
+                },"fast")
+            })
+
+            $(".serv1").mouseleave(function(){
+                $("#imgserv1").css("filter","grayscale(1)")
+                $(".ul1").css("display","none")
+                $(".sub-of1").animate({
+                    height : "0px"
+                },"fast")
+            })
+            $(".serv2").mouseleave(function(){
+                $("#imgserv2").css("filter","grayscale(1)")
+                $("#imgserv2").css("filter","grayscale(1)")
+                $(".ul2").css("display","none")
+                $(".sub-of2").animate({
+                    height : "0px"
+                },"fast")
+            })
+            $(".serv3").mouseleave(function(){
+                $("#imgserv3").css("filter","grayscale(1)")
+                $("#imgserv3").css("filter","grayscale(1)")
+                $(".ul3").css("display","none")
+                $(".sub-of3").animate({
+                    height : "0px"
+                },"fast")
             })
         })
     </script>

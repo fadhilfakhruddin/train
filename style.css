@@ -58,6 +58,7 @@ body {
 .about-me > h1 {
     font-size: 24pt;
     padding-left: 20px;
+    margin: 0 0 20px 0;
 }
 
 .about-me > img {
@@ -73,7 +74,7 @@ body {
     height: 200px;
     background: white;
     float: right;
-    margin: 30px;
+    margin: 10px 10px;
     padding: 10px;
     border-radius: 10px;
     font-weight: 100;
@@ -125,21 +126,21 @@ body {
 
 #colored-of {
     background-color: #EE453C;
-    width: 90%;
+    width: 85%;
     height: 100%;
     border-radius: 5px;
 }
 
 #colored-ware {
     background-color: #7EE377;
-    width: 90%;
+    width: 80%;
     height: 100%;
     border-radius: 5px;
 }
 
 #colored-min {
     background-color: #f0e905;
-    width: 90%;
+    width: 80%;
     height: 100%;
     border-radius: 5px;
 }
@@ -214,4 +215,121 @@ body {
 #mail > img {
     width: 100%;
     transition: .2s;
+}
+
+.services , .info   {
+    width: 85%;
+    margin: 1px auto;
+    display: block;
+    text-align: center;
+}
+
+.serv {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #b8b8b8a4;
+    margin-left: 20px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.serv > img {
+    width: 70%;
+    margin: 30px 30px;
+    filter: grayscale(1);
+    float: left;
+}
+
+.serv:hover {
+    background-color: white;
+}
+
+.services > h1 {
+    font-family: 'Exo 2', sans-serif;
+    text-align: left;
+    padding: 0 0 0 20px;
+    margin: 20px 0 20px 0;
+}
+
+.sub-of {
+    width: 200px;
+    height: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    background-color: #E82513;
+    filter: drop-shadow(0px 5px 5px rgba(102, 102, 102, 0.87));
+}
+
+.ul {
+    text-align: left;
+    font-size: 10pt;
+    margin: 10px 0;
+    padding: 0 0 0 25px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+}
+
+.info > h1 {
+    font-family: 'Exo 2', sans-serif;
+    text-align: left;
+    padding: 0 0 0 20px;
+    margin: 20px 0 20px 0;
+}
+
+.school , .exp {
+    background-color: white;
+    width: 35%;
+    height: 300px;
+    padding: 45px 50px;
+    margin: 0 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.school > ul {
+    position: absolute;
+    text-align: left;
+    /* list-style: none; */
+    font-size: 14pt;
+    margin: 0;
+}
+
+.sub-info {
+    font-size: 11pt;
+    list-style: none;
+}
+
+.track {
+    width: 3px;
+    background-color: #e3e3e3;
+    height: 60%;
+    float: left;
+}
+
+.track-exp {
+    width: 3px;
+    background-color: #e3e3e3;
+    height: 95%;
+    float: left;
+}
+
+#school-2, #exp-2 {
+    margin-top: 120px;
+}
+
+#exp-3 {
+    margin-top: 240px;
+}
+
+.exp > ul {
+    position: absolute;
+    text-align: left;
+    /* list-style: none; */
+    font-size: 14pt;
+    margin: 0;
 }
