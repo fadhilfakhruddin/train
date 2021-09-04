@@ -227,12 +227,12 @@ center > img {
     cursor: pointer;
 }
 
-.interest {
+.interest, .schema, .payment, .who {
     display: block;
     background-color: white;
 }
 
-.interest > h2 {
+.interest > h2, .schema > h2 {
     text-align: center;
     padding: 20px 0;
     margin: 0;
@@ -268,7 +268,7 @@ center > img {
 .sub-alasan {
     display: inline-block;
     width: 45%;
-    /* margin: 0 30px; */
+    margin: 0 30px 15px 30px;
 }
 
 .alasan-sec1, .alasan-sec2 {
@@ -277,13 +277,115 @@ center > img {
 }
 
 .alasan-img {
-    width: 250px;
+    width: 150px;
     display: block;
     margin: auto;
 }
 
-.alasan-sec2 > h3 {
+.alasan-sec2 > h3, .schema > h3 {
     text-align: center;
+}
+
+.section {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.section1, .section2 {
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.section1 > ol, .section2 > ol {
+    text-align: left;
+    line-height: 200%;
+}
+
+.container-schema {
+    display: block;
+}
+
+.container-schema > img {
+    display: block;
+    height: 700px;
+    margin: auto;
+}
+
+.sub-payment {
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-payment > h3 {
+    margin: 0 0 15px 0;
+}
+
+.notnet {
+    margin: 15px 0;
+    text-decoration: line-through;
+}
+
+.offering {
+    border: solid 4px #564E5D;
+    border-radius: 5px;
+}
+
+.countdown {
+    margin: auto;
+    width: 300px;
+    border-collapse: collapse;
+    border-spacing: 15px;
+    border: solid 1px #d1d1ff;
+}
+
+.header {
+    background-color: #d1d1ff;
+    font-size: 14pt;
+    height: 40px;
+}
+
+.isi {
+    font-size: 12pt;
+    height: 35px;
+}
+
+.who {
+    text-align: center;
+}
+
+.who > h2 {
+    margin: 0 0 25px 0;
+    padding-top: 25px;
+}
+
+.who > img {
+    display: inline-block;
+    width: 600px;
+}
+
+.who > ol {
+    width: 50vw;
+    display: inline-block;
+    font-size: 14pt;
+    line-height: 200%;
+}
+
+.footer {
+    display: block;
+    background-color: #564E5D;
+    padding-top: 8vh;
+    height: 12vh;
+    text-align: center;
+    color: white;
+}
+
+.footer > h4 {
+    margin: 0;
 }
 @keyframes scroll-video {
     0% {

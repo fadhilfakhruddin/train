@@ -22,8 +22,8 @@
         <div class="nav-icon">
             <a href="#home" class="icon"><img src="./asset/home-icon.svg"></a>
             <a href="#interest" class="icon"><img src="./asset/help-icon.svg"></a>
-            <a href="#" class="icon"><img src="./asset/stat-icon.svg"></a>
-            <a href="#" class="icon"><img src="./asset/payment-icon.svg"></a>
+            <a href="#schema" class="icon"><img src="./asset/stat-icon.svg"></a>
+            <a href="#payment" class="icon"><img src="./asset/payment-icon.svg"></a>
         </div>
     </div>
     <div class="logo" id="home">
@@ -99,6 +99,95 @@
             </div>
         </div>
     </div>
+    <div class="schema" id="schema">
+        <h2>Di Bikin Brand kamu gaperlu khawatir, karena kamu bakal banyak dapet keuntungan</h2>
+        <div class="section">
+            <div class="section1">
+                <ol>
+                    <li>Gaperlu modal gede, karena kamu bisa bikin brand satuan dan ga perlu stock barang</li>
+                    <li>Minim Resiko rugi! Karena kamu baru ngeluarin modal ketika ada yang pesen</li>
+                    <li>Keuntungan Besar! Karena kamu pakai brand dengan design ekslusif</li>
+                    <li>Garansi Poduk! Gaperlu takut kamu rugi, karena produk GRANANSI 100%</li>
+                </ol>
+            </div>
+            <div class="section2">
+                Foto / Video
+            </div>
+            <div class="section1">
+                Foto / Video
+            </div>
+            <div class="section2">
+                <ol start="5">
+                    <li>Ga bingung Cara mulainya! Karena kamu bakal diajarin dari 0 hingga kamu scale up!</li>
+                    <li>Ga perlu jago design, karena katalog sudah disediakan. Bahkan kamu diajarin cara mendesign nya!</li>
+                    <li>Full support dan proses produksi Cepat.</li>
+                    <li>Masih banyak lagi, gacukup ditulis disini</li>
+                </ol>
+            </div>
+        </div>
+        <h3>Gimana contoh keuntungan dan sistem kerjanya?</h3>
+        <div class="container-schema">
+            <img src="./asset/simulasi.jpg">
+            <img src="./asset/simulasi2.jpg"> 
+        </div>
+    </div>
+    <div class="payment" id="payment">
+        <div class="sub-payment">
+            <h3>Berapa sih investasi untuk bikin brand sendiri?</h3>
+            <span class="notnet">Rp 500.000?</span> <br><br>
+            <span class="notnet">Rp 1.500.000?</span> <br><br>
+            atau <br><br>
+            <span class="notnet">Rp 2.500.000?</span>
+            <h2>Kalo Segitu <br><br> KEMAHALAN untuk memulai!</h2>
+            <div class="offering">
+                <h2>
+                    Di Bikin <b>Brand</b> Kamu Cukup Investasi
+                </h2>
+                <h1>99rb aja!</h1>
+                <h3>Kamu sudah bisa bikin brand sendiri dan dapet semua keuntungan tadi!</h3>
+                <table class="countdown">
+                    <tr class="header">
+                        <th>HARI</th>
+                        <th>JAM</th>
+                        <th>MENIT</th>
+                        <th>DETIK</th>
+                    </tr>
+                    <tr class="isi">
+                        <th id="hari"></th>
+                        <th id="jam"></th>
+                        <th id="menit"></th>
+                        <th id="detik"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" id="exp"></th>
+                    </tr>
+                </table>
+                <h2>Khusus hari ini dan pendaftaran akan ditutup</h2>
+                <button class="btn1">Bikin Brand Sekarang</button>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="who">
+        <h2>Siapa yang cocok buat bikin brand sendiri?</h2>
+        <img src="./asset/mahasiswa.jpg">
+        <img src="./asset/pekerja.jpg">
+        <img src="./asset/irt.jpg">
+        <img src="./asset/kamu.jpg">
+        <h2>FAQ</h2>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+    </div>
+    <div class="footer">
+        <h4>Powered by Fadhil Fakhruddin</h4>
+    </div>
     <script>
         $(document).ready(function(){
             var counter = 1;
@@ -118,5 +207,51 @@
             })
         })
     </script>
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 1, 2021 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+//   document.getElementById("countdown").innerHTML = days + " Hari " + hours + " Jam "
+//   + minutes + " Menit " + seconds + " Detik ";
+
+    function  addZero(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+
+  document.getElementById("hari").innerHTML = addZero(days);
+  document.getElementById("jam").innerHTML = addZero(hours);
+  document.getElementById("menit").innerHTML = addZero(minutes);
+  document.getElementById("detik").innerHTML = addZero(seconds);
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("hari").innerHTML = "00";
+    document.getElementById("jam").innerHTML = "00";
+    document.getElementById("menit").innerHTML = "00";
+    document.getElementById("detik").innerHTML = "00";
+    document.getElementById("exp").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </body>
 </html>
